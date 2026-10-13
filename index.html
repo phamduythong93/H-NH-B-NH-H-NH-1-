@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu bài tập tương tác: Hình bình hành</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- MathJax CDN for mathematical symbols -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+        <!-- Header -->
+        <div class="bg-indigo-600 text-white py-6 px-8">
+            <h1 class="text-2xl sm:text-3xl font-bold text-center">PHIẾU BÀI TẬP: HÌNH BÌNH HÀNH</h1>
+            <p class="text-indigo-100 text-center mt-2 text-sm sm:text-base">Gồm 5 câu hỏi trắc nghiệm và 5 câu hỏi trả lời ngắn. Hãy hoàn thành và bấm nộp bài để xem kết quả!</p>
+        </div>
+
+        <form id="quizForm" class="p-6 sm:p-10 space-y-8">
+            <!-- SECTION 1: TRẮC NGHIỆM -->
+            <div>
+                <h2 class="text-xl font-bold text-indigo-700 border-b-2 border-indigo-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-indigo-100 text-indigo-800 w-8 h-8 rounded-full inline-flex items-center justify-center mr-3 text-sm">I</span>
+                    Phần 1: Trắc nghiệm (5 câu)
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Câu 1 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="mc" data-answer="B">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 1:</span> Cho hình bình hành $ABCD$. Khẳng định nào sau đây là <b>sai</b>?</p>
+                        <div class="space-y-2 pl-2">
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q1" value="A" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$AB = CD$ và $AD = BC$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q1" value="B" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$\widehat{A} = \widehat{B}$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q1" value="C" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$\widehat{A} = \widehat{C}$ và $\widehat{B} = \widehat{D}$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q1" value="D" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>Hai đường chéo cắt nhau tại trung điểm mỗi đường</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 2 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="mc" data-answer="C">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 2:</span> Cho hình bình hành $ABCD$ có $\widehat{A} = 70^\circ$. Số đo của góc $\widehat{C}$ là:</p>
+                        <div class="space-y-2 pl-2">
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q2" value="A" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$110^\circ$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q2" value="B" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$140^\circ$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q2" value="C" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$70^\circ$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q2" value="D" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$90^\circ$</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 3 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="mc" data-answer="A">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 3:</span> Tổng hai góc kề một cạnh của hình bình hành bằng bao nhiêu?</p>
+                        <div class="space-y-2 pl-2">
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q3" value="A" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$180^\circ$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q3" value="B" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$90^\circ$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q3" value="C" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$360^\circ$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q3" value="D" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$60^\circ$</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 4 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="mc" data-answer="D">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 4:</span> Tứ giác nào sau đây <b>chưa chắc</b> là hình bình hành?</p>
+                        <div class="space-y-2 pl-2">
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q4" value="A" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>Tứ giác có các cạnh đối song song</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q4" value="B" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>Tứ giác có các cạnh đối bằng nhau</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q4" value="C" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>Tứ giác có hai đường chéo cắt nhau tại trung điểm mỗi đường</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q4" value="D" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>Tứ giác có hai góc đối bằng nhau</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 5 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="mc" data-answer="B">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 5:</span> Cho hình bình hành $ABCD$ có diện tích bằng $48\text{ cm}^2$ và độ dài cạnh đáy $CD = 8\text{ cm}$. Chiều cao tương ứng với cạnh đáy $CD$ là:</p>
+                        <div class="space-y-2 pl-2">
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q5" value="A" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$4\text{ cm}$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q5" value="B" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$6\text{ cm}$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q5" value="C" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$8\text{ cm}$</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer p-2 rounded hover:bg-white transition">
+                                <input type="radio" name="q5" value="D" class="text-indigo-600 focus:ring-indigo-500">
+                                <span>$12\text{ cm}$</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2: TRẢ LỜI NGẮN -->
+            <div>
+                <h2 class="text-xl font-bold text-indigo-700 border-b-2 border-indigo-100 pb-2 mb-6 flex items-center">
+                    <span class="bg-indigo-100 text-indigo-800 w-8 h-8 rounded-full inline-flex items-center justify-center mr-3 text-sm">II</span>
+                    Phần 2: Trả lời ngắn (5 câu - Điền số)
+                </h2>
+
+                <div class="space-y-6">
+                    <!-- Câu 6 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="short" data-answer="22">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 6:</span> Cho hình bình hành $ABCD$ có $AB = 7\text{ cm}$ và $BC = 4\text{ cm}$. Tính chu vi của hình bình hành $ABCD$ (đơn vị: $\text{cm}$).</p>
+                        <div class="flex items-center space-x-3">
+                            <input type="text" name="q6" placeholder="Nhập đáp án số..." class="border border-slate-300 rounded-lg px-4 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 7 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="short" data-answer="70">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 7:</span> Cho hình bình hành $ABCD$ có $\widehat{A} = 110^\circ$. Tính số đo của góc $\widehat{B}$ (đơn vị độ, chỉ điền số).</p>
+                        <div class="flex items-center space-x-3">
+                            <input type="text" name="q7" placeholder="Nhập đáp án số..." class="border border-slate-300 rounded-lg px-4 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 8 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="short" data-answer="10">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 8:</span> Gọi $O$ là giao điểm hai đường chéo của hình bình hành $ABCD$. Biết đoạn thẳng $OA = 5\text{ cm}$. Tính độ dài đường chéo $AC$ (đơn vị $\text{cm}$).</p>
+                        <div class="flex items-center space-x-3">
+                            <input type="text" name="q8" placeholder="Nhập đáp án số..." class="border border-slate-300 rounded-lg px-4 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 9 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="short" data-answer="15">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 9:</span> Một hình bình hành có độ dài hai cạnh kề lần lượt là $x = 6\text{ cm}$ và $y = 9\text{ cm}$. Tính nửa chu vi của hình bình hành đó (đơn vị $\text{cm}$).</p>
+                        <div class="flex items-center space-x-3">
+                            <input type="text" name="q9" placeholder="Nhập đáp án số..." class="border border-slate-300 rounded-lg px-4 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+
+                    <!-- Câu 10 -->
+                    <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 question-box" data-qtype="short" data-answer="30">
+                        <p class="font-medium text-slate-900 mb-3"><span class="font-bold text-indigo-600">Câu 10:</span> Cho hình bình hành có diện tích bằng $150\text{ cm}^2$ và chiều cao ứng với một cạnh đáy là $5\text{ cm}$. Tính độ dài cạnh đáy đó (đơn vị $\text{cm}$).</p>
+                        <div class="flex items-center space-x-3">
+                            <input type="text" name="q10" placeholder="Nhập đáp án số..." class="border border-slate-300 rounded-lg px-4 py-2 w-48 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        </div>
+                        <div class="feedback mt-3 text-sm hidden"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4 border-t border-slate-200">
+                <button type="button" id="submitBtn" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-xl shadow-lg transition duration-200">
+                    Nộp bài và xem kết quả
+                </button>
+                <button type="reset" id="resetBtn" class="w-full sm:w-auto bg-slate-200 hover:bg-slate-300 text-slate-700 font-semibold py-3 px-8 rounded-xl transition duration-200">
+                    Làm lại từ đầu
+                </button>
+            </div>
+        </form>
+
+        <!-- Result Modal / Banner -->
+        <div id="resultBanner" class="hidden bg-indigo-50 border-t-2 border-indigo-500 p-6 text-center">
+            <h3 class="text-2xl font-bold text-indigo-900 mb-2">KẾT QUẢ BÀI LÀM</h3>
+            <p id="scoreText" class="text-lg font-medium text-indigo-700"></p>
+        </div>
+    </div>
+
+    <!-- Script Chấm Điểm -->
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            const boxes = document.querySelectorAll('.question-box');
+            let correctCount = 0;
+            let totalQuestions = boxes.length;
+
+            boxes.forEach((box, index) => {
+                const qType = box.getAttribute('data-qtype');
+                const correctAns = box.getAttribute('data-answer').trim();
+                const feedbackDiv = box.querySelector('.feedback');
+                feedbackDiv.classList.remove('hidden');
+
+                if (qType === 'mc') {
+                    const selected = box.querySelector('input[type="radio"]:checked');
+                    if (selected && selected.value === correctAns) {
+                        correctCount++;
+                        box.classList.remove('bg-slate-50', 'border-rose-200');
+                        box.classList.add('bg-emerald-50', 'border-emerald-300');
+                        feedbackDiv.innerHTML = `<span class="text-emerald-700 font-semibold">✓ Chính xác!</span>`;
+                    } else {
+                        box.classList.remove('bg-slate-50', 'border-emerald-300');
+                        box.classList.add('bg-rose-50', 'border-rose-300');
+                        feedbackDiv.innerHTML = `<span class="text-rose-700 font-semibold">✗ Chưa chính xác. Đáp án đúng là: ${correctAns}</span>`;
+                    }
+                } else if (qType === 'short') {
+                    const input = box.querySelector('input[type="text"]');
+                    const userVal = input ? input.value.trim() : '';
+                    if (userVal === correctAns) {
+                        correctCount++;
+                        box.classList.remove('bg-slate-50', 'border-rose-200');
+                        box.classList.add('bg-emerald-50', 'border-emerald-300');
+                        feedbackDiv.innerHTML = `<span class="text-emerald-700 font-semibold">✓ Chính xác!</span>`;
+                    } else {
+                        box.classList.remove('bg-slate-50', 'border-emerald-300');
+                        box.classList.add('bg-rose-50', 'border-rose-300');
+                        feedbackDiv.innerHTML = `<span class="text-rose-700 font-semibold">✗ Chưa chính xác. Đáp án đúng là: ${correctAns}</span>`;
+                    }
+                }
+            });
+
+            const resultBanner = document.getElementById('resultBanner');
+            const scoreText = document.getElementById('scoreText');
+            resultBanner.classList.remove('hidden');
+            scoreText.innerHTML = `Bạn đã trả lời đúng <span class="font-bold text-2xl">${correctCount}</span> / ${totalQuestions} câu!`;
+            
+            // Cuộn xuống để xem kết quả
+            resultBanner.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', function() {
+            const boxes = document.querySelectorAll('.question-box');
+            boxes.forEach(box => {
+                box.classList.remove('bg-emerald-50', 'border-emerald-300', 'bg-rose-50', 'border-rose-300');
+                box.classList.add('bg-slate-50', 'border-slate-200');
+                const feedbackDiv = box.querySelector('.feedback');
+                feedbackDiv.classList.add('hidden');
+                feedbackDiv.innerHTML = '';
+            });
+            document.getElementById('resultBanner').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
+```eof
